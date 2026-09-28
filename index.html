@@ -201,4 +201,401 @@
 
     .button-primary:hover {
       transform: translateY(-2px);
-      box
+      -shadow: 0 10px 30px rgba(216,180,106,.2);
+    }
+
+    .section {
+      padding: 90px 6%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 18px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 720px;
+      line-height: 1.8;
+      margin-bottom: 45px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #121218;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--gold);
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .number {
+      font-size: 2rem;
+      color: var(--gold);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .demo {
+      background: linear-gradient(135deg, #17120b, #0d0d12);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 45px;
+      text-align: center;
+    }
+
+    .founder {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .founder-box {
+      min-height: 300px;
+      border: 1px dashed rgba(216,180,106,.45);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-align: center;
+      padding: 30px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #111116;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    footer {
+      padding: 30px 6%;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .gold {
+      color: var(--gold);
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .founder {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 110px;
+      }
+
+      .demo {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">MARDIA <span>STUDIO</span></div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#founder">Founder</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="eyebrow">AI FILMMAKING STUDIO</div>
+
+      <h1>Your Story.<br><span>Your Vision. Your Film.</span></h1>
+
+      <p>
+        MARDIA STUDIO is an AI-powered filmmaking platform designed to help
+        creators transform simple ideas, images and stories into cinematic
+        creative experiences.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="button button-primary" href="#demo">Explore the Studio</a>
+        <a class="button" href="#about">Learn More</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About <span class="gold">MARDIA STUDIO</span></h2>
+
+      <p class="section-intro">
+        MARDIA STUDIO brings AI-assisted filmmaking tools into one approachable
+        creative environment. The vision is simple: make the filmmaking
+        process easier to explore for creators who have stories to tell,
+        without requiring professional prompting or complicated production
+        workflows.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="number">01</div>
+          <h3>Imagine</h3>
+          <p>
+            Start with a story, concept, character or visual idea.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="number">02</div>
+          <h3>Create</h3>
+          <p>
+            Use AI-assisted creative tools to develop characters,
+            scenes and visual concepts.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="number">03</div>
+          <h3>Build</h3>
+          <p>
+            Bring creative elements together into a developing film
+            experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <h2>From Idea to <span class="gold">Screen</span></h2>
+
+      <p class="section-intro">
+        MARDIA STUDIO is designed around a creator-friendly workflow that
+        keeps the technology powerful while keeping the experience simple.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>01 — Story</h3>
+          <p>
+            Develop an idea into a structured story and screenplay concept
+            with AI assistance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>02 — Characters</h3>
+          <p>
+            Explore character concepts, appearances, voices and creative
+            identities.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>03 — Scenes</h3>
+          <p>
+            Turn visual ideas into cinematic scene concepts and
+            AI-assisted video experiences.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>04 — Voice</h3>
+          <p>
+            Develop dialogue and voice experiences to support the story.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>05 — Edit</h3>
+          <p>
+            Organize scenes and creative assets as the project develops.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>06 — Experience</h3>
+          <p>
+            Preview the developing film and bring the different creative
+            elements together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="capabilities">
+      <h2>Creative <span class="gold">Capabilities</span></h2>
+
+      <p class="section-intro">
+        The MARDIA STUDIO ecosystem is being developed to support multiple
+        genres and creative formats.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Story to Movie</h3>
+          <p>
+            Develop story ideas, acts and screenplay concepts with AI
+            assistance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Character Studio</h3>
+          <p>
+            Build detailed character concepts including appearance,
+            personality and voice direction.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Image to Video</h3>
+          <p>
+            Explore cinematic motion and scene development from visual
+            starting points.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>AI Portraits</h3>
+          <p>
+            Develop visual character and concept-art directions with
+            generative AI.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Voice & Dialogue</h3>
+          <p>
+            Develop voice and dialogue experiences to support cinematic
+            storytelling.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Film Timeline</h3>
+          <p>
+            Organize creative scenes and assets as a project moves toward
+            a complete film experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo">
+      <div class="demo">
+        <div class="eyebrow">MARDIA STUDIO PROTOTYPE</div>
+
+        <h2>See the <span class="gold">Vision</span></h2>
+
+        <p class="section-intro" style="margin-left:auto;margin-right:auto;">
+          MARDIA STUDIO is being built as a new kind of accessible AI
+          filmmaking environment — simple on the outside, powerful
+          underneath.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="https://aistudio.google.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Open the Studio
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="founder">
+      <h2>The <span class="gold">Founder</span></h2>
+
+      <div class="founder">
+
+        <div class="founder-box">
+          <div>
+            <strong>Founder photo</strong>
+            <p>
+              Founder portrait coming soon.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow">FOUNDER & PRODUCT LEAD</div>
+
+          <h2>Mardia Philline Brumskine</h2>
+
+          <p class="section-intro">
+            Liberian Founder · Based in Rwanda
+          </p>
+
+          <p style="color:var(--muted);line-height:1.8;">
+            Mardia is building MARDIA STUDIO around a simple belief:
+            powerful creative technology should be approachable to the
+            people who have stories they want to tell.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+
+      <div class="eyebrow">PARTNERSHIPS & COLLABORATION</div>
+
+      <h2>Build the Future of <span class="gold">AI Filmmaking</span></h2>
+
+      <p class="section-intro" style="margin-left:auto;margin-right:auto;">
+        MARDIA STUDIO is open to conversations with creative partners,
+        technology partners, supporters, investors and organizations
+        interested in the future of AI-powered storytelling.
+      </p>
+
+      <a
+        class="button button-primary"
+        href="mailto:mardiaphillineaaliyahbrumskine@gmail.com"
+      >
+        Contact MARDIA STUDIO
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 MARDIA STUDIO · MARBRECAL AI
+    <br>
+    AI Filmmaking Studio
+  </footer>
+
+</body>
+</html>
